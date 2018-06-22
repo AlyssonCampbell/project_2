@@ -1,0 +1,29 @@
+{
+  "name": "project_2",
+  "version": "1.0.0",
+  "description": "Story/Character Wiki for writers &amp; gamers!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlyssonCampbell/project_2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlyssonCampbell/project_2/issues"
+  },
+  "homepage": "https://github.com/AlyssonCampbell/project_2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "method-override": "^2.3.10",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.0"
+  }
+}
