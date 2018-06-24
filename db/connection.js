@@ -5,8 +5,8 @@ const sequelize = new Sequelize("universe", "inclassuser", "Hartford1810", {
     operatorsAliases: false
 });
 
-const story = sequelize.import("../models/story");
-const character = sequelize.import("../models/character");
+const story = sequelize.import("../models/Story");
+const character = sequelize.import("../models/Character");
 
 character.belongsTo(story);
 story.hasMany(character, {

@@ -4,14 +4,13 @@ const connection = require("../db/connection");
 const Story = connection.models.story;
 
 //set up for GET handler:
-router.get("/story", (req, res) => {
-    story.findAll(), then(story => {
-        res.render("story", {
+router.get("/", (req, res) => {
+    Story.findAll().then(story => {
+        res.render("/", {
             story
         });
     }).catch(err => console.error(err));
 });
-
 
 
 
