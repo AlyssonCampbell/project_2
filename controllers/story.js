@@ -1,8 +1,16 @@
 const express = require("express");
 const router = express.Router();
-const story = require("../db/connection").story;
+const connection = require("../db/connection");
+const Story = connection.models.story;
 
-
+//set up for GET handler:
+router.get("/story", (req, res) => {
+    story.findAll(), then(story => {
+        res.render("story", {
+            story
+        });
+    }).catch(err => console.error(err));
+});
 
 
 

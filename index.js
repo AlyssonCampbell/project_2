@@ -10,7 +10,7 @@ const parser = require("body-parser");
 
 app.use("/character", characterController);
 app.use("/story", storyController);
-app.use("/", homeController);
+app.use("/character", homeController);
 app.set("view engine", "ejs");
 
 app.listen(4000, () =>
