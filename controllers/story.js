@@ -6,7 +6,7 @@ const Story = connection.models.story;
 //set up for GET handler:
 router.get("/", (req, res) => {
     Story.findAll().then(story => {
-        res.render("/", {
+        res.render("story", {
             story
         });
     }).catch(err => console.error(err));
