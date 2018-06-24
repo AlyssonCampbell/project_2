@@ -1,0 +1,45 @@
+[{
+        "storyId": 1,
+        "firstName": "Vice",
+        "lastName": "None",
+        "alias": "Autumn",
+        "gender": "Female",
+        "age": 25,
+        "prof": "Mercenary",
+        "desc": "Tiefling rogue",
+        "background": "Child of politican turned theif/mercenary"
+    },
+    {
+        "storyId": 1,
+        "firstName": "Neega",
+        "lastName": "none",
+        "alias": "unknown",
+        "gender": "female",
+        "age": 27,
+        "prof": "witch",
+        "desc": "Orc grave witch",
+        "background": "Cleric of unknown origin"
+    },
+    {
+        "storyId": 2,
+        "firstName": "Silvy",
+        "lastName": "Hillstrider",
+        "alias": "Opal Hillstrider",
+        "gender": "female",
+        "age": 30,
+        "prof": "pirate",
+        "desc": "Dragonborn, missing an eye",
+        "background": "Former tax collector turned pirate and general pain to the empire. Stole the emperor's parrot. Regrets nothing."
+    },
+    {
+        "storyId": 3,
+        "firstName": "Abbey",
+        "lastName": "Glover",
+        "alias": "none",
+        "gender": "female",
+        "age": 24,
+        "prof": "Scientist",
+        "desc": "Human witch with electricity powers",
+        "background": "Born to a long line of witches, recently developed elcricity power when an experiment went terribly wrong. A scientist is always fine."
+    }
+]
