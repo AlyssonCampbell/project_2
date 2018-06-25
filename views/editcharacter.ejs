@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Character</title>
+    <title>Edit Character</title>
 </head>
+
 <body>
-    <h1>Edit Character test</h1>
+    <h2>Edit Character</h2>
+
+    <form action="/character/<%= character.id %>?_method=put" method="post">
+        <p>
+            <label>First Name:</label>
+            <input type="text" value="<%= character.firstName %>" name="firstName" />
+            <br>
+            <label>Last Name:</label>
+            <input type="text" value="<%= character.lastName %>" name="lastName" />
+            <br>
+            <label>Aliases:</label>
+            <input type="text" value="<%= character.alias %>" name="alias" />
+            <br>
+            <label>Gender:</label>
+            <input type="text" value="<%= character.gender %>" name="gender" />
+            <br>
+            <label>Age at start of Story:</label>
+            <input type="integer" value="<%= character.age %>" name="age" />
+            <br>
+            <label>Profession:</label>
+            <input type="text" value="<%= character.prof %>" name="prof" />
+            <br>
+            <label>Description:</label>
+            <input type="text" value="<%= character.desc %>" name="desc" />
+            <br>
+            <label>Background:</label>
+            <input type="text" value="<%= character.background %>" name="background" />
+        </p>
+        <input type="submit" value="Edit your character" />
+    </form>
+    <form action="/character/<%= character.id %>?_method=delete" method="post">
+        <input type="submit" value="Delete Character">
+    </form>
+
 </body>
+
 </html>
