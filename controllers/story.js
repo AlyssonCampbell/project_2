@@ -14,6 +14,11 @@ router.get("/", (req, res) => {
         .catch(err => console.error(err));
 });
 
+//new stories route:
+router.get("/new", (req, res) => {
+    res.render("newstory");
+});
+
 //show route for stories
 router.get("/:id", (req, res) => {
     Story.findById(req.params.id).then(story =>
