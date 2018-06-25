@@ -10,18 +10,22 @@
 
 <body>
     <h1>Testing show stories</h1>
-        <h2>
-            <%= story.title %>
-        </h2>
-        <h2>
-            <%= story.genre %>
-        </h2>
-        <h2>
-            <%= story.setting %>
-        </h2>
-        <h2>
-            <%= story.year %>
-        </h2>
+    <h2>
+        <%= story.title %>
+    </h2>
+    <h2>
+        <%= story.genre %>
+    </h2>
+    <h2>
+        <%= story.setting %>
+    </h2>
+    <h2>
+        <%= story.year %>
+    </h2>
+    <br>
+    <h2>
+        <a href="/story/edit/<%= story.id %>">Edit or Delete Story</a>
+    </h2>
 </body>
 
 </html>

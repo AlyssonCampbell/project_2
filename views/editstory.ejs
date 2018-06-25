@@ -19,6 +19,8 @@
             <br>
             <label>Genre:</label>
             <select id="genre" name="genre" value="<%= story.genre %>" class="form-control">
+            <!-- defaults to currently selected genre when not changed -->
+                <option value="<%= story.genre %>">Currently:<%= story.genre %></option>
                 <option value="Fantasy">Fantasy</option>
                 <option value="Science Fiction">Science Fiction</option>
                 <option value="Horror/Thriller">Horror/Thriller</option>
