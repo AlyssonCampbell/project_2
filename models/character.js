@@ -7,6 +7,7 @@ module.exports = function (sequelize, DataTypes) {
         age: DataTypes.INTEGER,
         prof: DataTypes.STRING,
         desc: DataTypes.TEXT,
-        background: DataTypes.TEXT
+        background: DataTypes.TEXT,
+        image: DataTypes.STRING
     });
 };

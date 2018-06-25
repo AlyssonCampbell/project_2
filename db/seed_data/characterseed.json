@@ -7,7 +7,8 @@
         "age": 25,
         "prof": "Mercenary",
         "desc": "Tiefling rogue",
-        "background": "Child of politican turned theif/mercenary"
+        "background": "Child of politican turned theif/mercenary",
+        "image": "https://placekitten.com/g/200/200"
     },
     {
         "storyId": 1,
@@ -18,7 +19,8 @@
         "age": 27,
         "prof": "witch",
         "desc": "Orc grave witch",
-        "background": "Cleric of unknown origin"
+        "background": "Cleric of unknown origin",
+        "image": "https://placekitten.com/g/100/200"
     },
     {
         "storyId": 2,
@@ -29,7 +31,8 @@
         "age": 30,
         "prof": "pirate",
         "desc": "Dragonborn, missing an eye",
-        "background": "Former tax collector turned pirate and general pain to the empire. Stole the emperor's parrot. Regrets nothing."
+        "background": "Former tax collector turned pirate and general pain to the empire. Stole the emperor's parrot. Regrets nothing.",
+        "image": "https://placekitten.com/g/200/300"
     },
     {
         "storyId": 3,
@@ -40,6 +43,7 @@
         "age": 24,
         "prof": "Scientist",
         "desc": "Human witch with electricity powers",
-        "background": "Born to a long line of witches, recently developed elcricity power when an experiment went terribly wrong. A scientist is always fine."
+        "background": "Born to a long line of witches, recently developed elcricity power when an experiment went terribly wrong. A scientist is always fine.",
+        "image": "https://placekitten.com/g/250/250"
     }
 ]

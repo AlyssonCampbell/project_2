@@ -34,9 +34,13 @@
     <h2>Character Background:
         <%= character.background %>
     </h2>
+    <h2>Character picture:
+        <br>
+        <img src="<%= character.image %>" alt="characer picture">
+    </h2>
     <h2>Story Id#:
-    <a href="../story/<%= character.storyId %>"> 
-    <%= character.storyId %> 
+        <a href="../story/<%= character.storyId %>">
+            <%= character.storyId %>
     </h2>
     <h2>
         <a href="/character/edit/<%= character.id %>">Edit or Delete Character</a>
@@ -44,4 +48,3 @@
 </body>
 
 </html>
-
