@@ -53,5 +53,14 @@ router.put("/:id", (req, res) => {
     });
 });
 
+//route for delete
+router.delete("/:id", (req, res) => {
+    Story.findById(req.params.id).then(story => {
+        story.destroy().then(() => {
+            res.redirect("/story");
+        });
+    });
+});
+
 //stays at the bottom of the file:
 module.exports = router;

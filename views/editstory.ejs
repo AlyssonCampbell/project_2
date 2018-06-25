@@ -15,18 +15,21 @@
     <form action="/story/<%= story.id %>?_method=put" method="post">
         <p>
             <label>Title:</label>
-            <input type="text" value="<%= story.title %>" name="title"/>
+            <input type="text" value="<%= story.title %>" name="title" />
             <br>
             <label>Genre:</label>
-            <input type="text" value="<%= story.genre %>" name="genre"/>
+            <input type="text" value="<%= story.genre %>" name="genre" />
             <br>
             <label>Setting:</label>
-            <input type="text" value="<%= story.setting %>" name="setting"/>
+            <input type="text" value="<%= story.setting %>" name="setting" />
             <br>
             <label>Year Created:</label>
-            <input type="text" value="<%= story.year %>" name="year"/>
+            <input type="text" value="<%= story.year %>" name="year" />
         </p>
         <input type="submit" value="Edit your story" />
+    </form>
+    <form action="/story/<%= story.id %>?_method=delete" method="post">
+        <input type="submit" value="Delete Story">
     </form>
 
 </body>
