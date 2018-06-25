@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include("partials/header.ejs") %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Show Stories</title>
-</head>
-
-<body>
     <h1>Testing show stories</h1>
     <h2>
         <%= story.title %>
@@ -38,6 +29,5 @@
     <h2>
         <a href="/story/edit/<%= story.id %>">Edit or Delete Story</a>
     </h2>
-</body>
 
-</html>
+<%- include("partials/footer.ejs") %>
