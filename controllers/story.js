@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const connection = require("../db/connection");
 const Story = connection.models.story;
+const Character = connection.models.character;
 
 //set up for GET handler:
 router.get("/", (req, res) => {
@@ -19,7 +20,7 @@ router.get("/new", (req, res) => {
     res.render("newstory");
 });
 
-//show route for stories
+//functional show route for stories
 router.get("/:id", (req, res) => {
     Story.findById(req.params.id).then(story =>
         res.render("showstory", {
@@ -27,6 +28,21 @@ router.get("/:id", (req, res) => {
         })
     );
 });
+
+//possible route to show character & story name
+// router.get("/:id", (req, res) => {
+//     Story.findById(req.params.id).then(story => {
+//         Character.findAll({
+//             where: {
+//                 storyId: story.id
+//             }
+//         }).then(character => {
+//             res.render("showCharacter", {
+//                 character
+//             })
+//         })
+//     });
+// });
 
 //post for story
 router.post("/", (req, res) => {
