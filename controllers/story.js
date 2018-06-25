@@ -35,5 +35,23 @@ router.post("/", (req, res) => {
     });
 });
 
+//edit route
+router.get("/edit/:id", (req, res) => {
+    Story.findById(req.params.id).then(story => {
+        res.render("editstory", {
+            story
+        });
+    });
+});
+
+//put route for edit
+router.put("/:id", (req, res) => {
+    Story.findById(req.params.id).then(story => {
+        return story.updateAttributes(req.body)
+    }).then(story => {
+        res.redirect("/story");
+    });
+});
+
 //stays at the bottom of the file:
 module.exports = router;
