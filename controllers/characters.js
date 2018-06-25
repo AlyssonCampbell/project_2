@@ -4,6 +4,11 @@ const connection = require("../db/connection");
 const Character = connection.models.character;
 const Story = connection.models.story;
 
+// const router = require("express").Router({ mergeParams: true });
+// const { Story, Character } = require("../db/connection").models;
+
+const queryOptions = { include: [{ model: Story }] };
+
 //set up for GET handler:
 router.get("/", (req, res) => {
     Character.findAll()
@@ -28,22 +33,6 @@ router.get("/:id", (req, res) => {
         })
     );
 });
-
-
-//possible route to show character & story name
-// router.get("/:id", (req, res) => {
-//     Story.findById(req.params.id).then(story => {
-//         Character.findAll({
-//             where: {
-//                 storyId: story.id
-//             }
-//         }).then(character => {
-//             res.render("showCharacter", {
-//                 character
-//             })
-//         })
-//     });
-// });
 
 //post for character
 router.post("/", (req, res) => {

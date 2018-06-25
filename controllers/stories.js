@@ -4,6 +4,12 @@ const connection = require("../db/connection");
 const Story = connection.models.story;
 const Character = connection.models.character;
 
+const queryOptions = {
+    include: [{
+        model: Character
+    }]
+};
+
 //set up for GET handler:
 router.get("/", (req, res) => {
     Story.findAll()
@@ -22,11 +28,11 @@ router.get("/new", (req, res) => {
 
 //functional show route for stories
 router.get("/:id", (req, res) => {
-    Story.findById(req.params.id).then(story =>
+    Story.findById(req.params.id, queryOptions).then(story => {
         res.render("showstory", {
             story
         })
-    );
+    });
 });
 
 //possible route to show character & story name

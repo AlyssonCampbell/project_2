@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
-const storyController = require("./controllers/story");
-const characterController = require("./controllers/character");
-const homeController = require("./controllers/home");
+const storyController = require("./controllers/stories");
+const characterController = require("./controllers/characters");
+const homeController = require("./controllers/homes");
 const methodOverride = require("method-override");
 const parser = require("body-parser");
 

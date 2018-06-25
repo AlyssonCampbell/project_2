@@ -35,9 +35,9 @@
         <%= character.background %>
     </h2>
     <h2>Story Id#:
-    <%= character.storyId %>
+    <a href="../story/<%= character.storyId %>"> 
+    <%= character.storyId %> 
     </h2>
-    
     <h2>
         <a href="/character/edit/<%= character.id %>">Edit or Delete Character</a>
     </h2>
