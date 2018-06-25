@@ -28,5 +28,12 @@ router.get("/:id", (req, res) => {
     );
 });
 
+//post for story
+router.post("/", (req, res) => {
+    Story.create(req.body).then(() => {
+        res.redirect("/story");
+    });
+});
+
 //stays at the bottom of the file:
 module.exports = router;
