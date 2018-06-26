@@ -1,43 +1,54 @@
 <%- include("../partials/header.ejs") %>
 
-    <h2>Edit Character</h2>
+    <body id="character">
 
-    <form action="/character/<%= character.id %>?_method=put" method="post">
+        <h2>Edit Character</h2>
 
-        <label>First Name:</label>
-        <input type="text" value="<%= character.firstName %>" name="firstName" />
+        <form action="/character/<%= character.id %>?_method=put" method="post">
 
-        <label>Last Name:</label>
-        <input type="text" value="<%= character.lastName %>" name="lastName" />
+            <label>First Name:</label>
+            <input type="text" value="<%= character.firstName %>" name="firstName" />
 
-        <label>Aliases:</label>
-        <input type="text" value="<%= character.alias %>" name="alias" />
+            <label>Last Name:</label>
+            <input type="text" value="<%= character.lastName %>" name="lastName" />
 
-        <label>Gender:</label>
-        <input type="text" value="<%= character.gender %>" name="gender" />
+            <label>Aliases:</label>
+            <input type="text" value="<%= character.alias %>" name="alias" />
 
-        <label>Age at start of Story:</label>
-        <input type="integer" value="<%= character.age %>" name="age" />
+            <label>Gender:</label>
+            <input type="text" value="<%= character.gender %>" name="gender" />
 
-        <label>Profession:</label>
-        <input type="text" value="<%= character.prof %>" name="prof" />
+            <label>Age at start of Story:</label>
+            <input type="integer" value="<%= character.age %>" name="age" />
 
-        <label>Description:</label>
-        <input type="text" value="<%= character.desc %>" name="desc" />
+            <label>Profession:</label>
+            <input type="text" value="<%= character.prof %>" name="prof" />
 
-        <label>Background:</label>
-        <input type="text" value="<%= character.background %>" name="background" />
+            <label>Description:</label>
+            <input type="text" value="<%= character.desc %>" name="desc" />
 
-        <label>Image URL:</label>
-        <input type="text" value="<%= character.image %>" name="image" />
+            <label>Background:</label>
+            <input type="text" value="<%= character.background %>" name="background" />
 
-        <label>Story Id#:</label>
-        <input type="integer" value="<%= character.storyId %>" name="storyId" />
+            <label>Image URL:</label>
+            <input type="text" value="<%= character.image %>" name="image" />
 
-        <input type="submit" value="Edit your character" />
-    </form>
-    <form action="/character/<%= character.id %>?_method=delete" method="post">
-        <input type="submit" value="Delete Character">
-    </form>
+            <label>Story Id#:</label>
+            <input type="integer" value="<%= character.storyId %>" name="storyId" />
+
+            <input type="submit" value="Edit your character" />
+        </form>
+        <form action="/character/<%= character.id %>?_method=delete" method="post">
+            <input type="submit" value="Delete Character">
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+
+    </body>
 
     <%- include("../partials/footer.ejs") %>

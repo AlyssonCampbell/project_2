@@ -1,40 +1,51 @@
 <%- include("../partials/header.ejs") %>
 
-    <h1>Testing New Character</h1>
-    <h2>New Character!</h2>
-    <form action="/character" method="post" accept-charset="UTF-8">
+    <body id="character">
 
-        <label>First Name:</label>
-        <input type="text" name="firstName" id="" />
+        <h1>Testing New Character</h1>
+        <h2>New Character!</h2>
+        <form action="/character" method="post" accept-charset="UTF-8">
 
-        <label>Last Name:</label>
-        <input type="text" name="lastName" id="" />
+            <label>First Name:</label>
+            <input type="text" name="firstName" id="" />
 
-        <label>Aliases:</label>
-        <input type="text" name="alias" id="" />
+            <label>Last Name:</label>
+            <input type="text" name="lastName" id="" />
 
-        <label>Gender:</label>
-        <input type="text" name="gender" id="" />
+            <label>Aliases:</label>
+            <input type="text" name="alias" id="" />
 
-        <label>Age at beginning of story:</label>
-        <input type="integer" name="age" id="" />
+            <label>Gender:</label>
+            <input type="text" name="gender" id="" />
 
-        <label>Profession:</label>
-        <input type="text" name="prof" id="" />
+            <label>Age at beginning of story:</label>
+            <input type="integer" name="age" id="" />
 
-        <label>Description:</label>
-        <input type="text" name="desc" id="" />
+            <label>Profession:</label>
+            <input type="text" name="prof" id="" />
 
-        <label>Character Background:</label>
-        <input type="text" name="background" id="" />
+            <label>Description:</label>
+            <input type="text" name="desc" id="" />
 
-        <label>Character Image(URL):</label>
-        <input type="text" name="image" id="" />
+            <label>Character Background:</label>
+            <input type="text" name="background" id="" />
 
-        <label>Story Id#:</label>
-        <input type="integer" name="storyId" name="" />
+            <label>Character Image(URL):</label>
+            <input type="text" name="image" id="" />
 
-        <input type="submit" value="Add New Character!" />
-    </form>
+            <label>Story Id#:</label>
+            <input type="integer" name="storyId" name="" />
+
+            <input type="submit" value="Add New Character!" />
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+
+    </body>
 
     <%- include("../partials/footer.ejs") %>

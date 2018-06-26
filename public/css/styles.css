@@ -5,7 +5,21 @@ body {
 footer {
     font-family: "Reenie Beanie", cursive, "Courier New", monospace;
 }
-/* 
-.index {
-    background-image: 
-} */
+
+#index {
+    background-image: url("../images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#story {
+    background-image: url("../images/stories.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#character {
+    background-image: url("../images/characters.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
