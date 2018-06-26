@@ -16,18 +16,22 @@
 
     <h2>Cast of Characters:</h2>
     <% story.characters.forEach(character => { %>
-<h2>
-<a href="/character/<%= character.id %>"><%= character.firstName %></a>
-    </h2>
-<% }) %>
-<br>
-    <h2>
-        <a href="/character/new">Add a Character</a>
-    </h2>
-<br>
-<h3>This story's Id# is:<%= story.id %></h3>
-    <h2>
-        <a href="/story/edit/<%= story.id %>">Edit or Delete Story</a>
-    </h2>
+        <h2>
+            <a href="/character/<%= character.id %>">
+                <%= character.firstName %>
+            </a>
+        </h2>
+        <% }) %>
 
-    <%- include("../partials/footer.ejs") %>
+            <h2>
+                <a href="/character/new">Add a Character</a>
+            </h2>
+
+            <h3>This story's Id# is:
+                <%= story.id %>
+            </h3>
+            <h2>
+                <a href="/story/edit/<%= story.id %>">Edit or Delete Story</a>
+            </h2>
+
+            <%- include("../partials/footer.ejs") %>
