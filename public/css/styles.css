@@ -53,3 +53,38 @@ footer {
     margin-top: 20px;
     font-size: 80px;
 }
+
+#story .main {
+    text-align: center;
+    background-color: rgba(52, 39, 86, 0.55);
+    color: white;
+    border-radius: 25px;
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+
+ul {
+    list-style: none;
+    padding-right: 35px;
+    padding-top: 50px;
+}
+
+li {
+    padding: 10px;
+    font-size: 30px;
+}
+
+#character .main {
+    text-align: center;
+    background-color: rgba(52, 39, 86, 0.55);
+    color: white;
+    border-radius: 25px;
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
