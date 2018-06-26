@@ -1,44 +1,45 @@
 <%- include("../partials/header.ejs") %>
+    <html>
 
     <body id="character">
-
-        <h1>Testing show character</h1>
-        <h2>First Name:
-            <%= character.firstName %>
-        </h2>
-        <h2>Last Name:
-            <%= character.lastName %>
-        </h2>
-        <h2>Aliases:
-            <%= character.alias %>
-        </h2>
-        <h2>Gender:
-            <%= character.gender %>
-        </h2>
-        <h2>Age at start of story:
-            <%= character.age %>
-        </h2>
-        <h2>Profession:
-            <%= character.prof %>
-        </h2>
-        <h2>Character Description:
-            <%= character.desc %>
-        </h2>
-        <h2>Character Background:
-            <%= character.background %>
-        </h2>
-        <h2>Character picture:
-            <br>
-            <img src="<%= character.image %>" alt="characer picture">
-        </h2>
-        <h2>Story Id#:
-            <a href="../story/<%= character.storyId %>">
-                <%= character.storyId %>
-        </h2>
-        <h2>
-            <a href="/character/edit/<%= character.id %>">Edit or Delete Character</a>
-        </h2>
-
+        <div class="show">
+            <h1>Testing show character</h1>
+            <h2>First Name:
+                <%= character.firstName %>
+            </h2>
+            <h2>Last Name:
+                <%= character.lastName %>
+            </h2>
+            <h2>Aliases:
+                <%= character.alias %>
+            </h2>
+            <h2>Gender:
+                <%= character.gender %>
+            </h2>
+            <h2>Age at start of story:
+                <%= character.age %>
+            </h2>
+            <h2>Profession:
+                <%= character.prof %>
+            </h2>
+            <h2>Character Description:
+                <%= character.desc %>
+            </h2>
+            <h2>Character Background:
+                <%= character.background %>
+            </h2>
+            <h2>Character picture:
+                <br>
+                <img src="<%= character.image %>" alt="characer picture">
+            </h2>
+            <h2>Story Id#:
+                <a href="../story/<%= character.storyId %>">
+                    <%= character.storyId %>
+            </h2>
+            <h2>
+                <a href="/character/edit/<%= character.id %>">Edit or Delete Character</a>
+            </h2>
+        </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -49,3 +50,5 @@
     </body>
 
     <%- include("../partials/footer.ejs") %>
+
+    </html>

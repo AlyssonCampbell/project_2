@@ -1,25 +1,55 @@
 body {
     font-family: "Special Elite", cursive, "Courier New", monospace;
+    margin-bottom: 75px;
 }
 
-footer {
-    font-family: "Reenie Beanie", cursive, "Courier New", monospace;
-}
-
-#index {
+html #index {
     background-image: url("../images/home.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 #story {
     background-image: url("../images/stories.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 #character {
     background-image: url("../images/characters.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+}
+
+footer {
+    font-family: "Reenie Beanie", cursive, "Courier New", monospace;
+    background-color: rgba(72, 17, 145, 0.75);
+    color: #96f7dd;
+    display: inline;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.home-link {
+    float: left;
+    margin-left: 20px;
+}
+
+.copy {
+    float: right;
+    margin-right: 20px;
+}
+
+.title {
+    text-align: left;
+    font-size: 125px;
+    margin: 10px;
+    margin-bottom: 200px;
+}
+
+.main {
+    text-align: right;
+}
+
+.main h2 {
+    margin-top: 20px;
+    font-size: 80px;
 }

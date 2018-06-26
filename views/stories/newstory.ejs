@@ -1,40 +1,45 @@
 <%- include("../partials/header.ejs") %>
 
+    </html>
+
     <body id="story">
-        <h1>Testing new story</h1>
-        <h2>New Story!</h2>
-        <form action="/story" method="post" accept-charset="UTF-8">
+        <div class="new">
+            <h1>Testing new story</h1>
+            <h2>New Story!</h2>
+            <form action="/story" method="post" accept-charset="UTF-8">
 
-            <label>Title:</label>
-            <input type="text" name="title" id="" />
+                <label>Title:</label>
+                <input type="text" name="title" id="" />
 
-            <label>Genre:</label>
-            <select id="genre" name="genre" class="form-control">
-                <!-- defaults to "other" when none selected -->
-                <option value="Other">Choose Your Genre</option>
-                <option value="Fantasy">Fantasy</option>
-                <option value="Science Fiction">Science Fiction</option>
-                <option value="Horror/Thriller">Horror/Thriller</option>
-                <option value="Young Adult">Young Adult</option>
-                <option value="Romance">Romance</option>
-                <option value="Other">Other</option>
-            </select>
+                <label>Genre:</label>
+                <select id="genre" name="genre" class="form-control">
+                    <!-- defaults to "other" when none selected -->
+                    <option value="Other">Choose Your Genre</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Horror/Thriller">Horror/Thriller</option>
+                    <option value="Young Adult">Young Adult</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Other">Other</option>
+                </select>
 
-            <label>Setting:</label>
-            <input type="text" name="setting" id="" />
+                <label>Setting:</label>
+                <input type="text" name="setting" id="" />
 
-            <label>Year Created:</label>
-            <input type="text" name="year" id="" />
+                <label>Year Created:</label>
+                <input type="text" name="year" id="" />
 
-            <input type="submit" value="Add New Story!" />
-        </form>
+                <input type="submit" value="Add New Story!" />
+            </form>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-            crossorigin="anonymous"></script>
-
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+                crossorigin="anonymous"></script>
+        </div>
     </body>
     <%- include("../partials/footer.ejs") %>
+
+        </html>
