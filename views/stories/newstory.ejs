@@ -4,34 +4,40 @@
 
     <body id="story">
         <div class="new">
-            <h1>Testing new story</h1>
-            <h2>New Story!</h2>
+            <h2>New Story:</h2>
             <form action="/story" method="post" accept-charset="UTF-8">
 
                 <label>Title:</label>
+                <br>
                 <input type="text" name="title" id="" />
-
+                <br>
                 <label>Genre:</label>
-                <select id="genre" name="genre" class="form-control">
-                    <!-- defaults to "other" when none selected -->
-                    <option value="Other">Choose Your Genre</option>
-                    <option value="Fantasy">Fantasy</option>
-                    <option value="Science Fiction">Science Fiction</option>
-                    <option value="Horror/Thriller">Horror/Thriller</option>
-                    <option value="Young Adult">Young Adult</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Other">Other</option>
-                </select>
-
+                <br>
+                <div class="dropdown">
+                    <select id="genre" name="genre" class="form-control">
+                        <!-- defaults to "other" when none selected -->
+                        <option value="Other">Choose Your Genre</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                        <option value="Horror/Thriller">Horror/Thriller</option>
+                        <option value="Young Adult">Young Adult</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <br>
                 <label>Setting:</label>
+                <br>
                 <input type="text" name="setting" id="" />
-
+                <br>
                 <label>Year Created:</label>
+                <br>
                 <input type="text" name="year" id="" />
-
-                <input type="submit" value="Add New Story!" />
+                <br>
+                <div class="change">
+                    <input type="submit" value="Add New Story!" />
             </form>
-
+            </div>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

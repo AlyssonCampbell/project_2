@@ -139,6 +139,24 @@ li {
     letter-spacing: 5px;
 }
 
+#character .new {
+    text-align: center;
+    background-color: rgba(52, 39, 86, 0.55);
+    color: white;
+    border-radius: 25px;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    letter-spacing: 5px;
+}
+
+#character input {
+ padding-right: 100px;
+}
+
 #character .fields {
     text-align: center;
     padding-bottom: 20px;
@@ -153,6 +171,21 @@ li {
 }
 
 #story .edit {
+    text-align: center;
+    background-color: rgba(52, 39, 86, 0.55);
+    color: white;
+    border-radius: 25px;
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 5px;
+}
+
+#story .new {
     text-align: center;
     background-color: rgba(52, 39, 86, 0.55);
     color: white;
@@ -185,3 +218,4 @@ input {
     padding-right: 20px;
     padding-left: 20px;
 }
+
