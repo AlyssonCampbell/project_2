@@ -7,13 +7,13 @@ const Story = connection.models.story;
 // const router = require("express").Router({ mergeParams: true });
 // const { Story, Character } = require("../db/connection").models;
 
-const queryOptions = { include: [{ model: Story }] };
+// const queryOptions = { include: [{ model: Story }] };
 
 //set up for GET handler:
 router.get("/", (req, res) => {
     Character.findAll()
         .then(character => {
-            res.render("character", {
+            res.render("characters/character", {
                 character
             });
         })
@@ -22,13 +22,13 @@ router.get("/", (req, res) => {
 
 //new character route:
 router.get("/new", (req, res) => {
-    res.render("newcharacter");
+    res.render("characters/newcharacter");
 });
 
 //functional show route for character
 router.get("/:id", (req, res) => {
     Character.findById(req.params.id).then(character =>
-        res.render("showcharacter", {
+        res.render("characters/showcharacter", {
             character
         })
     );
@@ -44,7 +44,7 @@ router.post("/", (req, res) => {
 //edit character
 router.get("/edit/:id", (req, res) => {
     Character.findById(req.params.id).then(character => {
-        res.render("editcharacter", {
+        res.render("characters/editcharacter", {
             character
         });
     });

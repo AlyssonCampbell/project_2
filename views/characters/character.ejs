@@ -1,0 +1,14 @@
+<%- include("../partials/header.ejs") %>
+
+    <h1>Testing characters</h1>
+    <ul>
+        <% character.forEach(character => { %>
+            <li>
+                <a href="/character/<%=character.id %>">
+                    <%= character.firstName %> 
+                </a>
+            </li>
+            <% }) %>
+    </ul>
+
+<%- include("../partials/footer.ejs") %>

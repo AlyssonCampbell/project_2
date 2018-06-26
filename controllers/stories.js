@@ -14,7 +14,7 @@ const queryOptions = {
 router.get("/", (req, res) => {
     Story.findAll()
         .then(story => {
-            res.render("story", {
+            res.render("stories/story", {
                 story
             });
         })
@@ -23,32 +23,17 @@ router.get("/", (req, res) => {
 
 //new stories route:
 router.get("/new", (req, res) => {
-    res.render("newstory");
+    res.render("stories/newstory");
 });
 
 //functional show route for stories
 router.get("/:id", (req, res) => {
     Story.findById(req.params.id, queryOptions).then(story => {
-        res.render("showstory", {
+        res.render("stories/showstory", {
             story
         })
     });
 });
-
-//possible route to show character & story name
-// router.get("/:id", (req, res) => {
-//     Story.findById(req.params.id).then(story => {
-//         Character.findAll({
-//             where: {
-//                 storyId: story.id
-//             }
-//         }).then(character => {
-//             res.render("showCharacter", {
-//                 character
-//             })
-//         })
-//     });
-// });
 
 //post for story
 router.post("/", (req, res) => {
@@ -60,7 +45,7 @@ router.post("/", (req, res) => {
 //edit route
 router.get("/edit/:id", (req, res) => {
     Story.findById(req.params.id).then(story => {
-        res.render("editstory", {
+        res.render("stories/editstory", {
             story
         });
     });

@@ -1,0 +1,14 @@
+<%- include("../partials/header.ejs") %>
+
+    <h1>Testing stories</h1>
+    <ul>
+        <% story.forEach(story => { %>
+            <li>
+                <a href="/story/<%=story.id %>">
+                    <%= story.title %>
+                </a>
+            </li>
+            <% }) %>
+    </ul>
+
+    <%- include("../partials/footer.ejs") %>
