@@ -3,20 +3,19 @@
 
     <body id="story">
         <div class="show">
-            <h1>Testing show stories</h1>
-            <h2>
+            <h2>Title:
                 <%= story.title %>
             </h2>
-            <h2>
+            <h2>Genre:
                 <%= story.genre %>
             </h2>
-            <h2>
+            <h2>Setting:
                 <%= story.setting %>
             </h2>
-            <h2>
+            <h2>Year Written:
                 <%= story.year %>
             </h2>
-
+            <br>
             <h2>Cast of Characters:</h2>
             <% story.characters.forEach(character => { %>
                 <h2>
@@ -25,24 +24,24 @@
                     </a>
                 </h2>
                 <% }) %>
-
+                    <br>
                     <h2>
                         <a href="/character/new">Add a Character</a>
                     </h2>
-
-                    <h3>This story's Id# is:
+                    <br>
+                    <h4>Story Id#:
                         <%= story.id %>
-                    </h3>
-                    <h2>
-                        <a href="/story/edit/<%= story.id %>">Edit or Delete Story</a>
-                    </h2>
+                            </h2>
+                            <h2>
+                                <a href="/story/edit/<%= story.id %>">Edit or Delete Story</a>
+                            </h2>
 
-                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                        crossorigin="anonymous"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                        crossorigin="anonymous"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-                        crossorigin="anonymous"></script>
+                            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                                crossorigin="anonymous"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                                crossorigin="anonymous"></script>
+                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+                                crossorigin="anonymous"></script>
         </div>
     </body>
 

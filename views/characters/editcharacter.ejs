@@ -3,46 +3,63 @@
 
     <body id="character">
         <div class="edit">
-            <h2>Edit Character</h2>
+            <h2>Edit Character:</h2>
+            <div class="fields">
+                <form action="/character/<%= character.id %>?_method=put" method="post">
 
-            <form action="/character/<%= character.id %>?_method=put" method="post">
+                    <label>First Name:</label>
+                    <br>
+                    <input type="text" value="<%= character.firstName %>" name="firstName" />
+                    <br>
+                    <label>Last Name:</label>
+                    <br>
+                    <input type="text" value="<%= character.lastName %>" name="lastName" />
+                    <br>
+                    <label>Aliases:</label>
+                    <br>
+                    <input type="text" value="<%= character.alias %>" name="alias" />
+                    <br>
+                    <label>Gender:</label>
+                    <br>
+                    <input type="text" value="<%= character.gender %>" name="gender" />
+                    <br>
+                    <label>Age at start of Story:</label>
+                    <br>
+                    <input type="integer" value="<%= character.age %>" name="age" />
+                    <br>
+                    <label>Profession:</label>
+                    <br>
+                    <input type="text" value="<%= character.prof %>" name="prof" />
+                    <br>
+                    <label>Description:</label>
+                    <br>
+                    <input type="text" value="<%= character.desc %>" name="desc" />
+                    <br>
+                    <label>Background:</label>
+                    <br>
+                    <input type="text" value="<%= character.background %>" name="background" />
+                    <br>
+                    <label>Image URL:</label>
+                    <br>
+                    <input type="text" value="<%= character.image %>" name="image" />
+                    <br>
+                    <label>Story Id#:</label>
+                    <br>
+                    <input type="integer" value="<%= character.storyId %>" name="storyId" />
 
-                <label>First Name:</label>
-                <input type="text" value="<%= character.firstName %>" name="firstName" />
+            </div>
 
-                <label>Last Name:</label>
-                <input type="text" value="<%= character.lastName %>" name="lastName" />
-
-                <label>Aliases:</label>
-                <input type="text" value="<%= character.alias %>" name="alias" />
-
-                <label>Gender:</label>
-                <input type="text" value="<%= character.gender %>" name="gender" />
-
-                <label>Age at start of Story:</label>
-                <input type="integer" value="<%= character.age %>" name="age" />
-
-                <label>Profession:</label>
-                <input type="text" value="<%= character.prof %>" name="prof" />
-
-                <label>Description:</label>
-                <input type="text" value="<%= character.desc %>" name="desc" />
-
-                <label>Background:</label>
-                <input type="text" value="<%= character.background %>" name="background" />
-
-                <label>Image URL:</label>
-                <input type="text" value="<%= character.image %>" name="image" />
-
-                <label>Story Id#:</label>
-                <input type="integer" value="<%= character.storyId %>" name="storyId" />
-
-                <input type="submit" value="Edit your character" />
-            </form>
-            <form action="/character/<%= character.id %>?_method=delete" method="post">
-                <input type="submit" value="Delete Character">
-            </form>
-
+            <div class="buttons">
+                <div class="change">
+                    <input type="submit" value="Submit Changes" />
+                    </form>
+                </div>
+                <div class="delete">
+                    <form action="/character/<%= character.id %>?_method=delete" method="post">
+                        <input type="submit" value="Delete Character">
+                    </form>
+                </div>
+            </div>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

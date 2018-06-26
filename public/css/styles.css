@@ -19,13 +19,13 @@ html #index {
 }
 
 footer {
-    font-family: "Reenie Beanie", cursive, "Courier New", monospace;
     background-color: rgba(72, 17, 145, 0.75);
     color: #96f7dd;
     display: inline;
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding-top: 10px;
 }
 
 .home-link {
@@ -34,6 +34,7 @@ footer {
 }
 
 .copy {
+    font-family: "Reenie Beanie", cursive, "Courier New", monospace;
     float: right;
     margin-right: 20px;
 }
@@ -87,4 +88,100 @@ li {
     margin-right: 25%;
     padding-top: 50px;
     padding-bottom: 55px;
+}
+
+#character .show {
+    text-align: left;
+    background-color: rgba(52, 39, 86, 0.55);
+    border-radius: 25px;
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    letter-spacing: 3px;
+}
+
+#story .show {
+    text-align: left;
+    background-color: rgba(52, 39, 86, 0.55);
+    border-radius: 25px;
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    letter-spacing: 5px;
+}
+
+.show h2 {
+    color: white;
+    font-size: 150%;
+}
+
+.show h4 {
+    color: white;
+}
+
+#character .edit {
+    text-align: center;
+    background-color: rgba(52, 39, 86, 0.55);
+    color: white;
+    border-radius: 25px;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    letter-spacing: 5px;
+}
+
+#character .fields {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#character .buttons {
+    display: inline;
+}
+
+#character .change {
+    margin: 20px;
+}
+
+#story .edit {
+    text-align: center;
+    background-color: rgba(52, 39, 86, 0.55);
+    color: white;
+    border-radius: 25px;
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 5px;
+}
+
+.dropdown {
+    padding-left: 150px;
+    padding-right: 160px;
+}
+
+#story .buttons {
+    display: inline;
+}
+
+#story .change {
+    margin: 20px;
+}
+
+input {
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
 }

@@ -3,47 +3,53 @@
 
     <body id="story">
         <div class="edit">
-            <h1>Testing edit story</h1>
-            <h2>Edit story</h2>
+            <h2>Edit Story:</h2>
 
             <form action="/story/<%= story.id %>?_method=put" method="post">
 
                 <label>Title:</label>
+                <br>
                 <input type="text" value="<%= story.title %>" name="title" />
-
-                <label>Genre:</label>
-                <select id="genre" name="genre" value="<%= story.genre %>" class="form-control">
-                    <!-- defaults to currently selected genre when not changed -->
-                    <option value="<%= story.genre %>">Currently:
-                        <%= story.genre %>
-                    </option>
-                    <option value="Fantasy">Fantasy</option>
-                    <option value="Science Fiction">Science Fiction</option>
-                    <option value="Horror/Thriller">Horror/Thriller</option>
-                    <option value="Young Adult">Young Adult</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Other">Other</option>
-                </select>
-
+                <div class="dropdown">
+                    <label>Genre:</label>
+                    <br>
+                    <select id="genre" name="genre" value="<%= story.genre %>" class="form-control">
+                        <!-- defaults to currently selected genre when not changed -->
+                        <option value="<%= story.genre %>">Currently:
+                            <%= story.genre %>
+                        </option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                        <option value="Horror/Thriller">Horror/Thriller</option>
+                        <option value="Young Adult">Young Adult</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
                 <label>Setting:</label>
+                <br>
                 <input type="text" value="<%= story.setting %>" name="setting" />
-
+                <br>
                 <label>Year Created:</label>
+                <br>
                 <input type="text" value="<%= story.year %>" name="year" />
-
-                <input type="submit" value="Edit your story" />
+                <br>
+                <div class="buttons">
+                    <div class="change">
+                        <input type="submit" value="Edit your story" />
             </form>
+            </div>
             <form action="/story/<%= story.id %>?_method=delete" method="post">
                 <input type="submit" value="Delete Story">
             </form>
-
+            </div>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
                 crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
                 crossorigin="anonymous"></script>
-        </div>
+            </div>
     </body>
 
     <%- include("../partials/footer.ejs") %>
