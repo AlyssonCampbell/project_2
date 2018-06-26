@@ -219,3 +219,10 @@ input {
     padding-left: 20px;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
