@@ -8,47 +8,62 @@
                 <form action="/character/<%= character.id %>?_method=put" method="post">
 
                     <label>First Name:</label>
-                    <br>
-                    <input type="text" value="<%= character.firstName %>" name="firstName" />
-                    <br>
-                    <label>Last Name:</label>
-                    <br>
-                    <input type="text" value="<%= character.lastName %>" name="lastName" />
-                    <br>
-                    <label>Aliases:</label>
-                    <br>
-                    <input type="text" value="<%= character.alias %>" name="alias" />
-                    <br>
-                    <label>Gender:</label>
-                    <br>
-                    <input type="text" value="<%= character.gender %>" name="gender" />
-                    <br>
-                    <label>Age at start of Story:</label>
-                    <br>
-                    <input type="integer" value="<%= character.age %>" name="age" />
-                    <br>
-                    <label>Profession:</label>
-                    <br>
-                    <input type="text" value="<%= character.prof %>" name="prof" />
-                    <br>
-                    <label>Description:</label>
-                    <br>
-                    <input type="text" value="<%= character.desc %>" name="desc" />
-                    <br>
-                    <label>Background:</label>
-                    <br>
-                    <input type="text" value="<%= character.background %>" name="background" />
-                    <br>
-                    <label>Image URL:</label>
-                    <br>
-                    <input type="text" value="<%= character.image %>" name="image" />
-                    <br>
-                    <label>Story Id#:</label>
-                    <br>
+                    <div>
+                        <input type="text" value="<%= character.firstName %>" name="firstName" />
+                    </div>
+                    <div>
+                        <label>Last Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" value="<%= character.lastName %>" name="lastName" />
+                    </div>
+                    <div>
+                        <label>Aliases:</label>
+                    </div>
+                    <div>
+                        <input type="text" value="<%= character.alias %>" name="alias" />
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                    </div>
+                    <div>
+                        <input type="text" value="<%= character.gender %>" name="gender" />
+                    </div>
+                    <div>
+                        <label>Age at start of Story:</label>
+                    </div>
+                    <div>
+                        <input type="integer" value="<%= character.age %>" name="age" />
+                    </div>
+                    <div>
+                        <label>Profession:</label>
+                    </div>
+                    <div>
+                        <input type="text" value="<%= character.prof %>" name="prof" />
+                    </div>
+                    <div>
+                        <label>Description:</label>
+                    </div>
+                    <div>
+                        <input type="text" value="<%= character.desc %>" name="desc" />
+                    </div>
+                    <div>
+                        <label>Background:</label>
+                    </div>
+                    <div>
+                        <input type="text" value="<%= character.background %>" name="background" />
+                    </div>
+                    <div>
+                        <label>Image URL:</label>
+                    </div>
+                    <div>
+                        <input type="text" value="<%= character.image %>" name="image" />
+                    </div>
+                    <div>
+                        <label>Story Id#:</label>
+                    </div>
                     <input type="integer" value="<%= character.storyId %>" name="storyId" />
-
             </div>
-
             <div class="button">
                 <div class="change">
                     <input type="submit" value="Submit Changes" />

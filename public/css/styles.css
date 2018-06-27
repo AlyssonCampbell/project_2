@@ -104,6 +104,7 @@ li {
 }
 
 #story .show {
+    color: white;
     text-align: left;
     background-color: rgba(52, 39, 86, 0.55);
     border-radius: 25px;
@@ -116,13 +117,9 @@ li {
     letter-spacing: 5px;
 }
 
-.show h2 {
-    color: white;
-    font-size: 150%;
-}
-
-.show h4 {
-    color: white;
+#story .cast {
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 #character .edit {
@@ -188,14 +185,10 @@ li {
     padding-right: 160px;
 }
 
-#story .buttons {
-    display: inline;
-}
-
 input {
     border-radius: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 a {

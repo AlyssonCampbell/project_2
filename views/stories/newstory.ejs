@@ -8,32 +8,32 @@
             <form action="/story" method="post" accept-charset="UTF-8">
 
                 <label>Title:</label>
-                <br>
-                <input type="text" name="title" id="" />
-                <br>
-                <label>Genre:</label>
-                <br>
-                <div class="dropdown">
-                    <select id="genre" name="genre" class="form-control">
-                        <!-- defaults to "other" when none selected -->
-                        <option value="Other">Choose Your Genre</option>
-                        <option value="Fantasy">Fantasy</option>
-                        <option value="Science Fiction">Science Fiction</option>
-                        <option value="Horror/Thriller">Horror/Thriller</option>
-                        <option value="Young Adult">Young Adult</option>
-                        <option value="Romance">Romance</option>
-                        <option value="Other">Other</option>
-                    </select>
+                <div>
+                    <input type="text" name="title" id="" />
                 </div>
-                <br>
+                <label>Genre:</label>
+                <div>
+                    <div class="dropdown">
+                        <select id="genre" name="genre" class="form-control">
+                            <!-- defaults to "other" when none selected -->
+                            <option value="Other">Choose Your Genre</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Science Fiction">Science Fiction</option>
+                            <option value="Horror/Thriller">Horror/Thriller</option>
+                            <option value="Young Adult">Young Adult</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
                 <label>Setting:</label>
-                <br>
-                <input type="text" name="setting" id="" />
-                <br>
+                <div>
+                    <input type="text" name="setting" id="" />
+                </div>
                 <label>Year Created:</label>
-                <br>
-                <input type="text" name="year" id="" />
-                <br>
+                <div>
+                    <input type="text" name="year" id="" />
+                </div>
                 <div class="button">
                     <input type="submit" value="Add New Story!" />
             </form>

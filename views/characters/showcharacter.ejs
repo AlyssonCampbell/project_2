@@ -21,20 +21,23 @@
             <h2>Profession:
                 <%= character.prof %>
             </h2>
-            <br>
-            <h2>Character Description:
-                <br>
-                <%= character.desc %>
-            </h2>
-            <br>
-            <h2>Character Background:
-                <br>
-                <%= character.background %>
-            </h2>
-            <br>
+            <div>
+                <h2>Character Description:
+
+                    <%= character.desc %>
+                </h2>
+            </div>
+            <div>
+                <h2>Character Background:
+                    <div>
+                        <%= character.background %>
+                    </div>
+                </h2>
+            </div>
             <h2>Character picture:
-                <br>
-                <img src="<%= character.image %>" alt="characer picture">
+                <div>
+                    <img src="<%= character.image %>" alt="characer picture">
+                </div>
             </h2>
             <h2>Story Id#:
                 <a href="../story/<%= character.storyId %>">

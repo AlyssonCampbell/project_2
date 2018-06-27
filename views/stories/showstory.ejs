@@ -3,38 +3,54 @@
 
     <body id="story">
         <div class="show">
-            <h2>Title:
-                <%= story.title %>
-            </h2>
-            <h2>Genre:
-                <%= story.genre %>
-            </h2>
-            <h2>Setting:
-                <%= story.setting %>
-            </h2>
-            <h2>Year Written:
-                <%= story.year %>
-            </h2>
-            <br>
-            <h2>Cast of Characters:</h2>
-            <% story.characters.forEach(character => { %>
-                <h2>
-                    <a href="/character/<%= character.id %>">
-                        <%= character.firstName %>
-                    </a>
+            <div>
+                <h2>Title:
+                    <%= story.title %>
                 </h2>
-                <% }) %>
-                    <br>
-                    <h2>
-                        <a href="/character/new">Add a Character</a>
-                    </h2>
-                    <br>
-                    <h4>Story Id#:
-                        <%= story.id %>
-                    </h4>
-                    <h2>
-                        <a href="/story/edit/<%= story.id %>">Edit or Delete Story</a>
-                    </h2>
+            </div>
+            <div>
+                <h2>Genre:
+                    <%= story.genre %>
+                </h2>
+            </div>
+            <div>
+                <h2>Setting:
+                    <%= story.setting %>
+                </h2>
+            </div>
+            <div>
+                <h2>Year Written:
+                    <%= story.year %>
+                </h2>
+            </div>
+            <div>
+                <h4>Story Id#:
+                    <%= story.id %>
+                </h4>
+            </div>
+            <div class="cast">
+                <h2>Cast of Characters:</h2>
+                <div>
+                    <% story.characters.forEach(character => { %>
+                        <h2>
+                            <a href="/character/<%= character.id %>">
+                                <%= character.firstName %>
+                            </a>
+                        </h2>
+                        <% }) %>
+                </div>
+            </div>
+            <div class="changes">
+                <h2>
+                    <a href="/character/new">Add a Character</a>
+                </h2>
+            </div>
+
+            <div class="changes">
+                <h2>
+                    <a href="/story/edit/<%= story.id %>">Edit or Delete Story</a>
+                </h2>
+            </div>
         </div>
     </body>
 

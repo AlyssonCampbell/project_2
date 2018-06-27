@@ -8,32 +8,34 @@
             <form action="/story/<%= story.id %>?_method=put" method="post">
 
                 <label>Title:</label>
-                <br>
-                <input type="text" value="<%= story.title %>" name="title" />
-                <div class="dropdown">
+                <div>
+                    <input type="text" value="<%= story.title %>" name="title" />
+                    <div class="dropdown">
+                    </div>
                     <label>Genre:</label>
-                    <br>
-                    <select id="genre" name="genre" value="<%= story.genre %>" class="form-control">
-                        <!-- defaults to currently selected genre when not changed -->
-                        <option value="<%= story.genre %>">Currently:
-                            <%= story.genre %>
-                        </option>
-                        <option value="Fantasy">Fantasy</option>
-                        <option value="Science Fiction">Science Fiction</option>
-                        <option value="Horror/Thriller">Horror/Thriller</option>
-                        <option value="Young Adult">Young Adult</option>
-                        <option value="Romance">Romance</option>
-                        <option value="Other">Other</option>
-                    </select>
+                    <div class="dropdown">
+                        <select id="genre" name="genre" value="<%= story.genre %>" class="form-control">
+                            <!-- defaults to currently selected genre when not changed -->
+                            <option value="<%= story.genre %>">Currently:
+                                <%= story.genre %>
+                            </option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Science Fiction">Science Fiction</option>
+                            <option value="Horror/Thriller">Horror/Thriller</option>
+                            <option value="Young Adult">Young Adult</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
                 </div>
                 <label>Setting:</label>
-                <br>
-                <input type="text" value="<%= story.setting %>" name="setting" />
-                <br>
+                <div>
+                    <input type="text" value="<%= story.setting %>" name="setting" />
+                </div>
                 <label>Year Created:</label>
-                <br>
-                <input type="text" value="<%= story.year %>" name="year" />
-                <br>
+                <div>
+                    <input type="text" value="<%= story.year %>" name="year" />
+                </div>
                 <div class="button">
                     <div class="change">
                         <input type="submit" value="Edit your story" />
