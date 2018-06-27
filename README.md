@@ -36,6 +36,7 @@ Prettier
 ## Photo Credits:
 
 All images sourced from [unsplash.com](https://unsplash.com/)
+
 Background image credits:
 
 Home:
