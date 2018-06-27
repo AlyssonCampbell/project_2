@@ -1,2 +1,3 @@
 # project_2
-Story/Character Wiki for writers &amp; gamers!
+Your Universe:
+Story/Character Organization for writers &amp; gamers!
