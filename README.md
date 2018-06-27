@@ -37,6 +37,7 @@ Prettier
 
 All images sourced from [unsplash.com](https://unsplash.com/)
 Background image credits:
+
 Home:
 Photo by Patrick Tomasso | [@IMPATRICKT on Unsplash](https://unsplash.com/@impatrickt)
 
