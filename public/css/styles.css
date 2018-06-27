@@ -153,23 +153,6 @@ li {
     letter-spacing: 5px;
 }
 
-#character input {
- padding-right: 100px;
-}
-
-#character .fields {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-#character .buttons {
-    display: inline;
-}
-
-#character .change {
-    margin: 20px;
-}
-
 #story .edit {
     text-align: center;
     background-color: rgba(52, 39, 86, 0.55);
@@ -209,10 +192,6 @@ li {
     display: inline;
 }
 
-#story .change {
-    margin: 20px;
-}
-
 input {
     border-radius: 10px;
     padding-right: 20px;
@@ -224,5 +203,26 @@ a {
 }
 
 a:hover {
+    color: rgb(138, 102, 232);
+}
+
+.button {
+    padding-top: 20px;
+}
+
+.button input {
     color: white;
+    border-color: white;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.button input:hover {
+    color: rgb(138, 102, 232);
+    border-color: rgb(138, 102, 232);
+}
+
+.delete input:hover {
+    color: rgb(224, 15, 71);
+    border-color: rgb(224, 15, 71);
 }

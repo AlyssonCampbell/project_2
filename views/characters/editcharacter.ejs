@@ -49,17 +49,20 @@
 
             </div>
 
-            <div class="buttons">
+            <div class="button">
                 <div class="change">
                     <input type="submit" value="Submit Changes" />
                     </form>
                 </div>
-                <div class="delete">
+            </div>
+            <div class="button">
+                <span class="delete">
                     <form action="/character/<%= character.id %>?_method=delete" method="post">
                         <input type="submit" value="Delete Character">
                     </form>
-                </div>
+                </span
             </div>
+        </div>
         </div>
     </body>
     <%- include("../partials/footer.ejs") %>
