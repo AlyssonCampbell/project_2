@@ -46,7 +46,7 @@ Photo by Anton Darius | [@theSollers on Unsplash](https://unsplash.com/@thesolle
 Story pages:
 Photo by Thom Schneider | [@thomschneider on Unsplash](https://unsplash.com/@thomschneider)
 
-Profile image credtis:
+Profile image credits:
 
 Photo by Aziz Acharki | [@acharki95 on Unsplash](https://unsplash.com/@acharki95)
 
