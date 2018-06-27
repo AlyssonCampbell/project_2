@@ -47,6 +47,7 @@ Story pages:
 Photo by Thom Schneider | [@thomschneider on Unsplash](https://unsplash.com/@thomschneider)
 
 Profile image credtis:
+
 Photo by Aziz Acharki | [@acharki95 on Unsplash](https://unsplash.com/@acharki95)
 
 Photo by Max Felner | [@maxfelner on Unsplash](https://unsplash.com/@maxfelner)
