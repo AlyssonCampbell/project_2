@@ -28,5 +28,26 @@ Prettier
 
 **Add copyright stuff too**
 
+## Photo Credits:
+All images sourced from [unsplash.com](https://unsplash.com/)
+Background image credits:
+Home:
+Photo by Patrick Tomasso | [@IMPATRICKT on Unsplash](https://unsplash.com/@impatrickt)
+
+Character pages:
+Photo by Anton Darius | [@thomschneider on Unsplash](https://unsplash.com/@thesollers)
+
+Story pages:
+Photo by Thom Schneider | [](https://unsplash.com/@thomschneider)
+
+Profile image credtis:
+Photo by Aziz Acharki | [@acharki95](https://unsplash.com/@acharki95)
+
+Photo by Max Felner | [@maxfelner](https://unsplash.com/@maxfelner)
+
+Photo by Anthony Tran | [@anthonytran](https://unsplash.com/@anthonytran)
+
+Photo by Vinicius Henrique | [@vinnydsilva](https://unsplash.com/@vinnydsilva)
+
 <br>Thanks for reading!<br>
 =^.\_.^=
