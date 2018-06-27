@@ -47,13 +47,13 @@ Story pages:
 Photo by Thom Schneider | [@thomschneider on Unsplash](https://unsplash.com/@thomschneider)
 
 Profile image credtis:
-Photo by Aziz Acharki | [@acharki95](https://unsplash.com/@acharki95)
+Photo by Aziz Acharki | [@acharki95 on Unsplash](https://unsplash.com/@acharki95)
 
-Photo by Max Felner | [@maxfelner](https://unsplash.com/@maxfelner)
+Photo by Max Felner | [@maxfelner on Unsplash](https://unsplash.com/@maxfelner)
 
-Photo by Anthony Tran | [@anthonytran](https://unsplash.com/@anthonytran)
+Photo by Anthony Tran | [@anthonytran on Unsplash](https://unsplash.com/@anthonytran)
 
-Photo by Vinicius Henrique | [@vinnydsilva](https://unsplash.com/@vinnydsilva)
+Photo by Vinicius Henrique | [@vinnydsilva on Unsplash](https://unsplash.com/@vinnydsilva)
 
 <br>Thanks for reading!<br>
 =^.\_.^=
