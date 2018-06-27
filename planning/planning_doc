@@ -1,16 +1,16 @@
 ## Project 2 Proposal:
 
 I would like to create an application that allows the user to create and store character information for each of their stories/games. When writing a story, there can be a LOT of different characters to keep track of and I wanted to make an application that lets the user sort characters by the story that they’re in as well as have a way to keep track of multiple stories. Each story will have multiple characters but each character will only have one story. 
-<br>
+
 ##Project #2 Models(for MVP):
 (I may add additional properties once the MVP is working such as an image link, and possibly relations to other characters within the database)
-<br>
+
 ###Story table:
 Title: 
 Genre:
 Setting: (will have the time period or location the story is taking place in)
 Year:(year story was created)
-<br>
+
 ###Character table:
 FirstName:
 LastName:
@@ -21,30 +21,29 @@ Prof: (profession)
 Desc: (physical description of the character)
 Background: (character backstory field)
 Image(added field to add URL after)
-<br>
+
 ##Product Features for MVP:
 Complete CRUD functionality for both story and characters
 Application shows all the stories created, when selected, brings you to the story details where you can edit or delete
 Has another page for adding another story
 Same for each character
 Deployed to Heroku
-<br>
+
 ##Silver product:
 Have a home page where you can select what you want to do:
 Add a story or character
 View existing stories or characters
 A button within the story page that links you to the characters list for that story and allows you to add a character
 Ability to Select the story from the characters page
-<br>
+
 ##Gold product:
 Navigation panel within all views to select the different stories and characters within the stories as well as jump to the add menu for both stories and characters
-<br>
-<br>
+
 ##User story:
 As a writer I want to be able to view all my stories so I can keep track of them
 As a writer I want to be able to list out all the characters within a story to organize
 As a writer I want to be able to add, delete or edit these characters and stories as they change
-<br>
+
 ##Pseudo-code Planning
 ###MVP:
 Make directory, install as needed
@@ -61,14 +60,14 @@ Create index route for homepage
 Create Show route for stories
 Create new route/Create update route/Create delete
 Do the same for the characters
-<br>
+
 ##Silver:
 Navigation panel that is accessible within all screens off the home page (as well as on the home page) to link to the other pages that sticks to the left side and slides open
 Add character image & cover art uploads
 Link to home page for the show for both character and stories
 Link on home page for add for both
 Button within Story to get to related characters, button on characters to link to other characters in the story & the story
-<br>
+
 ##Gold:
 Add page sound effects when clicking links
 Quill writing noise when edit or adding new
