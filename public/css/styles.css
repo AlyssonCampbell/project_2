@@ -115,6 +115,19 @@ footer {
     letter-spacing: 3px;
 }
 
+#character .background {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#character .picture {
+    padding-bottom: 20px;
+}
+
+#character .changes {
+    padding-top: 20px;
+}
+
 #story .show {
     color: white;
     text-align: left;
