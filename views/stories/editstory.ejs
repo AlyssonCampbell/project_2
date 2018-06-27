@@ -38,11 +38,13 @@
                     <div class="change">
                         <input type="submit" value="Edit your story" />
             </form>
-            </div>   
+            </div>
             <div class="button">
-                <form action="/story/<%= story.id %>?_method=delete" method="post">
-                    <input type="submit" value="Delete Story">
-                </form>
+                <span class="delete">
+                    <form action="/story/<%= story.id %>?_method=delete" method="post">
+                        <input type="submit" value="Delete Story">
+                    </form>
+                </span>
             </div>
             </div>
         </div>
