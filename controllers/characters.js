@@ -2,12 +2,6 @@ const express = require("express");
 const router = express.Router();
 const connection = require("../db/connection");
 const Character = connection.models.character;
-const Story = connection.models.story;
-
-// const router = require("express").Router({ mergeParams: true });
-// const { Story, Character } = require("../db/connection").models;
-
-// const queryOptions = { include: [{ model: Story }] };
 
 //set up for GET handler:
 router.get("/", (req, res) => {
