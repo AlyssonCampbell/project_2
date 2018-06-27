@@ -1,22 +1,19 @@
 [{
-        "title": "Mercenaries of the Storm",
-        "genre": "Fantasy",
-        "setting": "D&D 5th edition",
-        "year": 2018
-
+        "title": "Hystrix cristata",
+        "genre": "Science Fiction",
+        "setting": "Space",
+        "year": 2007
     },
     {
-        "title": "13th Age",
-        "genre": "Other",
-        "setting": "13th age",
-        "year": 2017
-
+        "title": "Delphinus delphis",
+        "genre": "Romance",
+        "setting": "Earth",
+        "year": 2005
     },
     {
-        "title": "Universe of Poor Lighting",
-        "genre": "Horror",
-        "setting": "1920's Town called New Mersey",
-        "year": 2018
-
+        "title": "Coluber constrictor",
+        "genre": "Horror/Thriller",
+        "setting": "D&D 5th Edition",
+        "year": 2001
     }
 ]
