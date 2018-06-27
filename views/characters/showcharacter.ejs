@@ -27,25 +27,30 @@
                     <%= character.desc %>
                 </h2>
             </div>
-            <div>
+            <div class="background">
                 <h2>Character Background:
                     <div>
                         <%= character.background %>
                     </div>
                 </h2>
             </div>
-            <h2>Character picture:
+            <div class="picture">
+                <h2>Character picture:</h2>
                 <div>
                     <img src="<%= character.image %>" alt="characer picture">
                 </div>
-            </h2>
-            <h2>Story Id#:
-                <a href="../story/<%= character.storyId %>">
-                    <%= character.storyId %>
-            </h2>
-            <h2>
-                <a href="/character/edit/<%= character.id %>">Edit or Delete Character</a>
-            </h2>
+            </div>
+            <div>
+                <h2>Story Id#:
+                    <a href="../story/<%= character.storyId %>">
+                        <%= character.storyId %>
+                </h2>
+            </div>
+            <div class="changes">
+                <h2>
+                    <a href="/character/edit/<%= character.id %>">Edit or Delete Character</a>
+                </h2>
+            </div>
         </div>
 
     </body>
