@@ -40,7 +40,12 @@ Prettier
 
 ## Built with:
 
-HTML/CSS/Javascript/Node.js/SQL
+- HTML
+- CSS
+- Javascript
+- Node.js
+- SQL
+- Bootstrap
 
 Dependencies:
 - body-parser: ver.1.18.3
