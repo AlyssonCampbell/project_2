@@ -43,13 +43,13 @@ Prettier
 HTML/CSS/Javascript/Node.js/SQL
 
 Dependencies:
-    body-parser: ver.1.18.3
-    ejs: ver.2.6.1
-    express: ver.4.16.3
-    method-override: ver.2.3.10
-    pg: ver.7.4.3
-    pg-hstore: ver.2.3.2
-    sequelize: ver.4.38.0
+- body-parser: ver.1.18.3
+- ejs: ver.2.6.1
+- express: ver.4.16.3
+- method-override: ver.2.3.10
+- pg: ver.7.4.3
+- pg-hstore: ver.2.3.2
+- sequelize: ver.4.38.0
 
 ### Want to contribute?
 
