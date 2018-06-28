@@ -116,8 +116,13 @@ footer {
 }
 
 #character .background {
-    padding-top: 30px;
+    padding-top: 20px;
+}
+
+#character textarea {
+    padding-top: 10px;
     padding-bottom: 20px;
+    border-radius: 25px;
 }
 
 #character .picture {
