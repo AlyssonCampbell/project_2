@@ -51,13 +51,15 @@
                         <label>Background:</label>
                     </div>
                     <div>
-                        <input type="text" value="<%= character.background %>" name="background" />
+                        <textarea name="background" rows="10" cols="25">
+                            <%= character.background %>
+                        </textarea>
                     </div>
                     <div>
                         <label>Image URL:</label>
                     </div>
                     <div>
-                        <input type="text" value="<%= character.image %>" name="image" />
+                        <input type="url" value="<%= character.image %>" name="image" />
                     </div>
                     <div>
                         <label>Story Id#:</label>
