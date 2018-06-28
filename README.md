@@ -54,6 +54,7 @@ Dependencies:
 ### Want to contribute?
 
 [Main Repository](https://github.com/AlyssonCampbell/project_2)
+
 [Issue Tracker](https://github.com/AlyssonCampbell/project_2/issues)
 
 ### Copyright info:
