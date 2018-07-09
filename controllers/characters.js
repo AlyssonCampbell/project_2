@@ -3,6 +3,8 @@ const router = express.Router();
 const connection = require("../db/connection");
 const Character = connection.models.character;
 
+// I would use two spaces for indentation instead of four with JS code
+
 //set up for GET handler:
 router.get("/", (req, res) => {
     Character.findAll()

@@ -2,16 +2,16 @@
 
 I would like to create an application that allows the user to create and store character information for each of their stories/games. When writing a story, there can be a LOT of different characters to keep track of and I wanted to make an application that lets the user sort characters by the story that they’re in as well as have a way to keep track of multiple stories. Each story will have multiple characters but each character will only have one story. 
 
-##Project #2 Models(for MVP):
+## Project #2 Models(for MVP):
 (I may add additional properties once the MVP is working such as an image link, and possibly relations to other characters within the database)
 
-###Story table:
+### Story table:
 Title: 
 Genre:
 Setting: (will have the time period or location the story is taking place in)
 Year:(year story was created)
 
-###Character table:
+### Character table:
 FirstName:
 LastName:
 Alias:
@@ -22,36 +22,37 @@ Desc: (physical description of the character)
 Background: (character backstory field)
 Image(added field to add URL after)
 
-##Product Features for MVP:
+## Product Features for MVP:
 Complete CRUD functionality for both story and characters
 Application shows all the stories created, when selected, brings you to the story details where you can edit or delete
 Has another page for adding another story
 Same for each character
 Deployed to Heroku
 
-##Silver product:
+## Silver product:
 Have a home page where you can select what you want to do:
 Add a story or character
 View existing stories or characters
 A button within the story page that links you to the characters list for that story and allows you to add a character
 Ability to Select the story from the characters page
 
-##Gold product:
+## Gold product:
 Navigation panel within all views to select the different stories and characters within the stories as well as jump to the add menu for both stories and characters
 
-##User story:
+## User story:
 As a writer I want to be able to view all my stories so I can keep track of them
 As a writer I want to be able to list out all the characters within a story to organize
 As a writer I want to be able to add, delete or edit these characters and stories as they change
 
-##Pseudo-code Planning
-###MVP:
+## Pseudo-code Planning
+### MVP:
 Make directory, install as needed
 Create the database and the tables within it
 Set up seed data for each table
 Connect the database to sequelize
 Define schema & model
 Link model to the connection
+// I would make this a markdown file so it formats!
 Create migration file
 Run migrations
 Seed the database
@@ -61,14 +62,14 @@ Create Show route for stories
 Create new route/Create update route/Create delete
 Do the same for the characters
 
-##Silver:
+## Silver:
 Navigation panel that is accessible within all screens off the home page (as well as on the home page) to link to the other pages that sticks to the left side and slides open
 Add character image & cover art uploads
 Link to home page for the show for both character and stories
 Link on home page for add for both
 Button within Story to get to related characters, button on characters to link to other characters in the story & the story
 
-##Gold:
+## Gold:
 Add page sound effects when clicking links
 Quill writing noise when edit or adding new
 Eraser noise when deleting? Or paper crumple noise

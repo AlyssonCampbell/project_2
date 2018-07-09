@@ -1,270 +1,273 @@
 /*universal styling*/
 
 body {
-    font-family: "Special Elite", cursive, "Courier New", monospace;
-    margin-bottom: 75px;
+  font-family: "Special Elite", cursive, "Courier New", monospace;
+  margin-bottom: 75px;
 }
 
+/* I wouldn't use ID's for CSS - especially since you are using background-size: cover on each -- that could be DRY-ed up! */
 #index {
-    background-image: url("../images/home.jpg");
-    background-size: cover;
+  background-image: url("../images/home.jpg");
+  background-size: cover;
 }
 
 #story {
-    background-image: url("../images/stories.jpg");
-    background-size: cover;
+  background-image: url("../images/stories.jpg");
+  background-size: cover;
 }
 
 #character {
-    background-image: url("../images/characters.jpg");
-    background-size: cover;
+  background-image: url("../images/characters.jpg");
+  background-size: cover;
 }
 
-h2 {
-    font-size: 30px;
+h2,
+li {
+  font-size: 30px;
 }
 
 ul {
-    list-style: none;
-    padding-right: 35px;
-    padding-top: 50px;
+  list-style: none;
+  padding-right: 35px;
+  padding-top: 50px;
 }
 
 li {
-    padding: 10px;
-    font-size: 30px;
+  padding: 10px;
 }
 
 /*footer styling*/
 
 footer {
-    background-color: rgba(72, 17, 145, 0.75);
-    color: #96f7dd;
-    display: inline;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding-top: 10px;
+  background-color: rgba(72, 17, 145, 0.75);
+  color: #96f7dd;
+  display: inline;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+}
+
+/* this can be DRY-ed up! */
+.home-link,
+.story-link,
+.character-link {
+  float: left;
 }
 
 .home-link {
-    float: left;
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-.story-link {
-    float: left;
-    margin-left: 30px;
-}
-
+.story-link,
 .character-link {
-    float: left;
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .copy {
-    font-family: "Reenie Beanie", cursive, "Courier New", monospace;
-    float: right;
-    margin-right: 20px;
+  font-family: "Reenie Beanie", cursive, "Courier New", monospace;
+  float: right;
+  margin-right: 20px;
 }
 
 /*home page styling*/
 
 .title {
-    text-align: left;
-    font-size: 125px;
-    margin: 10px;
-    margin-bottom: 200px;
+  text-align: left;
+  font-size: 125px;
+  margin: 10px;
+  margin-bottom: 200px;
 }
 
 .main h2 {
-    text-align: right;
-    margin-top: 20px;
-    font-size: 80px;
+  text-align: right;
+  margin-top: 20px;
+  font-size: 80px;
 }
 
 /*main pages*/
 
 #story .main {
-    text-align: center;
-    background-color: rgba(52, 39, 86, 0.55);
-    color: white;
-    border-radius: 25px;
-    margin-top: 15%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-top: 50px;
-    padding-bottom: 55px;
+  text-align: center;
+  background-color: rgba(52, 39, 86, 0.55);
+  color: white;
+  border-radius: 25px;
+  margin-top: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 50px;
+  padding-bottom: 55px;
 }
 
 #character .main {
-    text-align: center;
-    background-color: rgba(52, 39, 86, 0.55);
-    color: white;
-    border-radius: 25px;
-    margin-top: 15%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-top: 50px;
-    padding-bottom: 55px;
+  text-align: center;
+  background-color: rgba(52, 39, 86, 0.55);
+  color: white;
+  border-radius: 25px;
+  margin-top: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 50px;
+  padding-bottom: 55px;
 }
 
 /*show pages*/
 
+/* a few of these are the same -- they should be classes!! */
 #character .show {
-    text-align: left;
-    background-color: rgba(52, 39, 86, 0.55);
-    color: white;
-    border-radius: 25px;
-    margin-top: 3%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    letter-spacing: 3px;
+  text-align: left;
+  background-color: rgba(52, 39, 86, 0.55);
+  color: white;
+  border-radius: 25px;
+  margin-top: 3%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  letter-spacing: 3px;
 }
 
 #character .background {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 #character textarea {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 25px;
 }
 
 #character .picture {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #character .changes {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 #story .show {
-    color: white;
-    text-align: left;
-    background-color: rgba(52, 39, 86, 0.55);
-    border-radius: 25px;
-    margin-top: 15%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    letter-spacing: 5px;
+  color: white;
+  text-align: left;
+  background-color: rgba(52, 39, 86, 0.55);
+  border-radius: 25px;
+  margin-top: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  letter-spacing: 5px;
 }
 
 #story .cast {
-    margin-top: 30px;
-    margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 /*New pages*/
 
 #character .new {
-    text-align: center;
-    background-color: rgba(52, 39, 86, 0.55);
-    color: white;
-    border-radius: 25px;
-    margin-top: 2%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    letter-spacing: 5px;
+  text-align: center;
+  background-color: rgba(52, 39, 86, 0.55);
+  color: white;
+  border-radius: 25px;
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  letter-spacing: 5px;
 }
 
 #story .new {
-    text-align: center;
-    background-color: rgba(52, 39, 86, 0.55);
-    color: white;
-    border-radius: 25px;
-    margin-top: 15%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    letter-spacing: 5px;
+  text-align: center;
+  background-color: rgba(52, 39, 86, 0.55);
+  color: white;
+  border-radius: 25px;
+  margin-top: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 5px;
 }
 
 /*edit pages*/
 
 #character .edit {
-    text-align: center;
-    background-color: rgba(52, 39, 86, 0.55);
-    color: white;
-    border-radius: 25px;
-    margin-top: 2%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    letter-spacing: 5px;
+  text-align: center;
+  background-color: rgba(52, 39, 86, 0.55);
+  color: white;
+  border-radius: 25px;
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  letter-spacing: 5px;
 }
 
 #story .edit {
-    text-align: center;
-    background-color: rgba(52, 39, 86, 0.55);
-    color: white;
-    border-radius: 25px;
-    margin-top: 15%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    letter-spacing: 5px;
+  text-align: center;
+  background-color: rgba(52, 39, 86, 0.55);
+  color: white;
+  border-radius: 25px;
+  margin-top: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 5px;
 }
 
 /*styling on fields/input*/
 
 .dropdown {
-    padding-left: 150px;
-    padding-right: 160px;
+  padding-left: 150px;
+  padding-right: 160px;
 }
 
 input {
-    border-radius: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    text-align: center;
+  border-radius: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
 }
 
 /*links and button styling*/
 
 a {
-    color: white;
+  color: white;
 }
 
 a:hover {
-    color: rgb(138, 102, 232);
+  color: rgb(138, 102, 232);
 }
 
 .button {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .button input {
-    color: white;
-    border-color: white;
-    background-color: transparent;
-    padding: 5px;
+  color: white;
+  border-color: white;
+  background-color: transparent;
+  padding: 5px;
 }
 
 .button input:hover {
-    color: rgb(138, 102, 232);
-    border-color: rgb(138, 102, 232);
+  color: rgb(138, 102, 232);
+  border-color: rgb(138, 102, 232);
 }
 
 .delete input:hover {
-    color: rgb(224, 15, 71);
-    border-color: rgb(224, 15, 71);
+  color: rgb(224, 15, 71);
+  border-color: rgb(224, 15, 71);
 }
