@@ -5,6 +5,7 @@ module.exports = function (sequelize, DataTypes) {
         alias: DataTypes.STRING,
         gender: DataTypes.STRING,
         age: DataTypes.INTEGER,
+        // I would write out the whole field - so profession and description
         prof: DataTypes.STRING,
         desc: DataTypes.TEXT,
         background: DataTypes.TEXT,

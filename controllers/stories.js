@@ -23,6 +23,7 @@ router.get("/", (req, res) => {
 
 //new stories route:
 router.get("/new", (req, res) => {
+    // these file names should probably have a hyphen to deliniate the words so new-story rather than newstory
     res.render("stories/newstory");
 });
 
